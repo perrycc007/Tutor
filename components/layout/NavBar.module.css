@@ -1,0 +1,151 @@
+.header {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    padding: 0 5%;
+    padding-left: 10%;
+    position: sticky;
+    top: 0;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .header li {
+    margin-left: 3rem;
+  }
+  
+  .header li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+  }
+  
+  .header li a:hover,
+  .header li a:active,
+  .header li a.active {
+    color: #20B5BA;
+  }
+  
+  
+  .SecButton {
+      background-color:#166071;
+      border-radius:28px;
+      margin-left: 3rem;
+      border:1px solid #ffffff;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:1.3rem;
+      padding:5px 31px;
+      text-decoration:none;
+      
+    }
+  .SecButton:hover {
+      background-color:#3ea8bd;
+      transition-duration: 0.2s;
+    }
+    
+  .SecButton:active {
+      position:relative;
+      top:1px;
+    }
+  
+    @media screen and (max-width: 960px) {
+      .NavbarItems {
+        position: relative;
+      }
+    
+      .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+      }
+    
+      .nav-menu.active {
+        background: #242222;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+      }
+    
+      .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+      }
+    
+      .nav-links:hover {
+        background-color: #fff;
+        color: #242424;
+        border-radius: 0;
+        text-decoration-color: none;
+      }
+    
+      .navbar-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 50%);
+      }
+    
+      .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+    
+      .fa-times {
+        color: #fff;
+        font-size: 2rem;
+      }
+    
+      .nav-links-mobile {
+        display: block;
+        text-align: center;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 80%;
+        text-decoration: none;
+        font-size: 1.5rem;
+        background-color: transparent;
+        color: #fff;
+        padding: 14px 20px;
+        border: 1px solid #fff;
+        transition: all 0.3s ease-out;
+      }
+    
+      .nav-links-mobile:hover {
+        background: #fff;
+        color: #242424;
+        transition: 250ms;
+      }
+    }
+    

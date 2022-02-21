@@ -1,0 +1,21 @@
+.toggleButtonActive { 
+    color: black;
+    background-color: transparent;
+    border: transparent;
+    font: 1rem;
+}
+.toggleButtonPassive { 
+    color: gray;
+    background-color: transparent;
+    border: transparent;
+    font: 1rem;
+
+}
+
+.toggleButton :hover {
+    color: rgb(196, 196, 196);
+    background-color: transparent;
+    border: transparent;
+    font: 1rem;
+
+}
