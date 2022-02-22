@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ChosenItem from '../../ui/ChooseItem'
+import ChosenItem from '../../Input/ChooseItem'
 import { useStore } from '../../../hooks-store/store'
 import classes from './Chosen.module.css';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -8,17 +8,26 @@ import 'react-tabs/style/react-tabs.css';
 
 
 
+
+
 const Chosen = props => {
   const state = useStore()[0];
+  const oral = state.subjects.filter((subject)=>{
+    return subject.group == "oral"
+  });
+  
+  const common = state.subjects.filter((subject)=>{
+    return subject.group == "common"
+  });
   return (
   <Tabs>
     <TabList>
       <Tab>補習</Tab>
-      <Tab>Title 2</Tab>
+      <Tab>會話</Tab>
     </TabList>
 
     <TabPanel>
-      {state.subjects.map(box => (
+      {common.map(box => (
         <ChosenItem
           key={box.id}
           id={box.id}
@@ -29,7 +38,15 @@ const Chosen = props => {
       ))}
     </TabPanel>
     <TabPanel>
-      <h2>Any content 2</h2>
+    {oral.map(box => (
+        <ChosenItem
+          key={box.id}
+          id={box.id}
+          title={box.title}
+          description={box.description}
+          isChosen={box.isChosen}
+        />
+      ))}
     </TabPanel>
   </Tabs>
   );

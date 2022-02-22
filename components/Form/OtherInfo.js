@@ -1,5 +1,5 @@
 import React from "react";
-import OptionsBox from '../ui/OptionsBox'
+import OptionsBox from '../Input/OptionsBox'
 
 
 function OtherInfo({ formData, setFormData }) {

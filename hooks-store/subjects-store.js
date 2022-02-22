@@ -16,15 +16,15 @@ const configureStore = () => {
   initStore(actions, {
     subjects: [
       {
-        id: 'p1',
-        title: 'Red Scarf',
-        description: 'A pretty red scarf.',
+        id: '全科',
+        title: '全科',
+        group: 'common',
         isChosen: false
       },
       {
-        id: 'p2',
-        title: 'Blue T-Shirt',
-        description: 'A pretty blue t-shirt.',
+        id: '文科',
+        title: '文科',
+        group: 'oral',
         isChosen: false
       },
       {

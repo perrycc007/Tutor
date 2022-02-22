@@ -25,19 +25,19 @@ body {
 
 button {
   font: inherit;
-  background: #ff2058;
+  background: #166071;
   padding: 0.5rem 2rem;
   color: white;
-  border: 1px solid #ff2058;
+  border: none;
   margin: 0.5rem 0;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
 }
 
 button:hover,
 button:active {
-  background: white;
-  color: #ff2058;
+  background: #3496ac;
+  color: white;
 }
 
 button:focus {
@@ -46,12 +46,12 @@ button:focus {
 
 button.buttonOutline {
   background: white;
-  color: #ff2058;
+  color: black;
 }
 
 button.buttonOutline:hover,
 button.buttonOutline:active {
-  background: #ff2058;
+  background: #0f4450; 
   color: white;
   box-shadow: none;
 }

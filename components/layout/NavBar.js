@@ -92,7 +92,7 @@ const settings = [
   };
 
   return (
-    <AppBar position="static" style={{ background: 'white' }}>
+    <AppBar position="sticky" style={{ background: 'white' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography

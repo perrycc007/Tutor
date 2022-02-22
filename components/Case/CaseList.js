@@ -1,6 +1,5 @@
 import Caseitem from './CaseItem';
 import classes from './CaseList.module.css';
-
 function CaseList(props) {
   return (
     <ul className={classes.list}>

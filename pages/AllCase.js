@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 
 import CaseList from '../components/Case/CaseList';
+import Filter from '../components/layout/Filter';
+
 
 function AllCasePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -42,6 +44,7 @@ function AllCasePage() {
   return (
     <section>
       <h1>補習個案</h1>
+      <Filter/>
       <CaseList cases={loadedCases} />
     </section>
   );
